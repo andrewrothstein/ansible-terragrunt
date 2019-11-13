@@ -1,0 +1,7 @@
+---
+# vars file for terragrunt
+terragrunt_platform: '{{ terragrunt_os }}_{{ terragrunt_arch }}'
+terragrunt_url: '{{ terragrunt_mirror }}/{{ terragrunt_ver }}/terragrunt_{{ terragrunt_platform }}{{ terragrunt_suffix | default("") }}'
+terragrunt_exe: '{{ terragrunt_install_dir }}/terragrunt_{{ terragrunt_ver }}{{ terragrunt_suffix | default("") }}'
+terragrunt_link: '{{ terragrunt_install_dir }}/terragrunt{{ terragrunt_suffix | default("") }}'
+terragrunt_checksum: '{{ terragrunt_checksums[terragrunt_ver][terragrunt_platform] }}'

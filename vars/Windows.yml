@@ -1,0 +1,3 @@
+---
+terragrunt_os: windows
+terragrunt_suffix: .exe
