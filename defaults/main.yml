@@ -1,6 +1,6 @@
 ---
 # defaults file for terragrunt
-terragrunt_ver: v0.23.12
+terragrunt_ver: v0.23.14
 terragrunt_os: linux
 terragrunt_arch: amd64
 terragrunt_install_dir: /usr/local/bin
@@ -161,3 +161,17 @@ terragrunt_checksums:
     windows_386: sha256:fe90034237dbdd32a65f48470c3db18f66debeec751be8de2db181c8968ef193
     # https://github.com/gruntwork-io/terragrunt/releases/download/v0.23.12/terragrunt_windows_amd64.exe
     windows_amd64: sha256:c587119f307cd22908be764227b711f8d2d4501e855d804eeda552a3b6073970
+  # https://github.com/gruntwork-io/terragrunt/releases/download/v0.23.14/SHA256SUMS
+  v0.23.14:
+    # https://github.com/gruntwork-io/terragrunt/releases/download/v0.23.14/terragrunt_darwin_386
+    darwin_386: sha256:eccd1b9b3046a01a3ca6689f6610a9565c4a88e6ae2007609412a4a590f63a09
+    # https://github.com/gruntwork-io/terragrunt/releases/download/v0.23.14/terragrunt_darwin_amd64
+    darwin_amd64: sha256:541c1b83c1945d9c08e85f66f39a7a2b3251970b70ae30e1760e701641aa2d19
+    # https://github.com/gruntwork-io/terragrunt/releases/download/v0.23.14/terragrunt_linux_386
+    linux_386: sha256:bea5d30eeb65bf93096493c9d5b60e55d0898d3e6292010e93cc44c3efb3d307
+    # https://github.com/gruntwork-io/terragrunt/releases/download/v0.23.14/terragrunt_linux_amd64
+    linux_amd64: sha256:e39cea3b484098ba48f956d411d46b21c44e5d342a2eb51980d834d064e6bcf7
+    # https://github.com/gruntwork-io/terragrunt/releases/download/v0.23.14/terragrunt_windows_386.exe
+    windows_386: sha256:0cae7990caf37407adf6be51584ac7a8e90b19682e8842c8c57ee7b3e8d39cdf
+    # https://github.com/gruntwork-io/terragrunt/releases/download/v0.23.14/terragrunt_windows_amd64.exe
+    windows_amd64: sha256:2ef5cedacde40fd0da6d17f57bc12210480bd7047213b28993b0386427d51273
