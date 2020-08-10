@@ -1,4 +1,4 @@
-n---
+---
 # defaults file for terragrunt
 terragrunt_ver: v0.23.33
 terragrunt_os: linux
