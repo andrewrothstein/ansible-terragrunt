@@ -38,4 +38,4 @@ dl_ver() {
     dl $ver $lchecksums windows amd64 .exe
 }
 
-dl_ver ${1:-v0.24.1}
+dl_ver ${1:-v0.25.1}
