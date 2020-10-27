@@ -9,7 +9,7 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: download
+- name: downloading {{ terragrunt_url }}
   become: yes
   become_user: root
   get_url:
@@ -17,7 +17,7 @@
     dest: '{{ terragrunt_exe }}'
     mode: 0755
     checksum: '{{ terragrunt_checksum }}'
-- name: link
+- name: linking {{ terragrunt_link }} to {{ terragrunt_exe }}
   become: yes
   become_user: root
   file:
