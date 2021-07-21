@@ -1,6 +1,6 @@
 andrewrothstein.terragrunt
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-terragrunt.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-terragrunt)
+![Build Status](https://github.com/andrewrothstein/ansible-terragrunt/actions/workflows/build.yml/badge.svg)
 
 Installs [terragrunt](https://github.com/gruntwork-io/terragrunt).
 
