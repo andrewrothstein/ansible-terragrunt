@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+set -e
 DIR=~/Downloads
 MIRROR=https://github.com/gruntwork-io/terragrunt/releases/download
 APP=terragrunt
@@ -37,4 +38,4 @@ dl_ver() {
     dl $ver $lchecksums windows amd64 .exe
 }
 
-dl_ver ${1:-v0.36.6}
+dl_ver ${1:-v0.36.7}
