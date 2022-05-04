@@ -32,10 +32,11 @@ dl_ver() {
 
 
     dl $ver $lchecksums darwin amd64
+    dl $ver $lchecksums darwin arm64
     dl $ver $lchecksums linux 386
     dl $ver $lchecksums linux amd64
     dl $ver $lchecksums windows 386 .exe
     dl $ver $lchecksums windows amd64 .exe
 }
 
-dl_ver ${1:-v0.36.9}
+dl_ver ${1:-v0.36.10}
