@@ -25,7 +25,7 @@ dl_ver() {
     local rchecksums=$MIRROR/$ver/SHA256SUMS
     if [ ! -e $lchecksums ];
     then
-        wget -q -O $lchecksums $rchecksums
+        curl -sSLf -o $lchecksums $rchecksums
     fi
     printf "  # %s\n" $rchecksums
     printf "  %s:\n" $ver
@@ -35,8 +35,9 @@ dl_ver() {
     dl $ver $lchecksums darwin arm64
     dl $ver $lchecksums linux 386
     dl $ver $lchecksums linux amd64
+    dl $ver $lchecksums linux arm64
     dl $ver $lchecksums windows 386 .exe
     dl $ver $lchecksums windows amd64 .exe
 }
 
-dl_ver ${1:-v0.37.4}
+dl_ver ${1:-v0.38.0}
