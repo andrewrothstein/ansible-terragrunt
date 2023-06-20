@@ -3,7 +3,7 @@
 - alpine_3.18
 - alpine_edge
 - archlinux_latest
-- debian_buster
+- debian_bookworm
 - debian_bullseye
 - fedora_37
 - fedora_38
