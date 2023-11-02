@@ -17,6 +17,7 @@
     dest: '{{ terragrunt_exe }}'
     mode: 0755
     checksum: '{{ terragrunt_checksum }}'
+    timeout: '{{ terragrunt_timeout }}'
 - name: linking {{ terragrunt_link }} to {{ terragrunt_exe }}
   become: true
   become_user: root
