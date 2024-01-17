@@ -2,13 +2,13 @@
 - name: Testing andrewrothstein.terragrunt
   hosts: all
   tasks:
-  - name: Installing andrewrothstein.terragrunt
-    ansible.builtin.include_role:
-      name: '{{ playbook_dir }}'
-  - name: Executing 'terragrunt --version'
-    ansible.builtin.command: /usr/local/bin/terragrunt --version
-    changed_when: false
-    register: terragrunt_test_output
-  - name: Output from 'terragrunt --version'
-    ansible.builtin.debug:
-      msg: '{{ terragrunt_test_output.stdout }}'
+    - name: Installing andrewrothstein.terragrunt
+      ansible.builtin.include_role:
+        name: '{{ playbook_dir }}'
+    - name: Executing 'terragrunt --version'
+      ansible.builtin.command: /usr/local/bin/terragrunt --version
+      changed_when: false
+      register: terragrunt_test_output
+    - name: Output from 'terragrunt --version'
+      ansible.builtin.debug:
+        msg: '{{ terragrunt_test_output.stdout }}'
