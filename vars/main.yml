@@ -1,7 +1,7 @@
 ---
 # vars file for terragrunt
-terragrunt_os: '{{ ansible_system | lower }}'
-terragrunt_arch: '{{ terragrunt_arch_map[ansible_architecture] }}'
+terragrunt_os: '{{ ansible_facts["system"] | lower }}'
+terragrunt_arch: '{{ terragrunt_arch_map[ansible_facts["architecture"]] }}'
 terragrunt_platform: '{{ terragrunt_os }}_{{ terragrunt_arch }}'
 terragrunt_url: '{{ terragrunt_mirror }}/{{ terragrunt_ver }}/terragrunt_{{ terragrunt_platform }}{{ terragrunt_suffix | default("") }}'
 terragrunt_exe: '{{ terragrunt_install_dir }}/terragrunt_{{ terragrunt_ver }}{{ terragrunt_suffix | default("") }}'
